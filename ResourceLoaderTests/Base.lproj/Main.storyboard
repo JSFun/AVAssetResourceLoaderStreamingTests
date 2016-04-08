@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nCg-1r-SNw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="HhA-fd-nzP">
+            <objects>
+                <viewController id="nCg-1r-SNw" customClass="DetailViewController" customModule="ResourceLoaderTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="StZ-LE-cDo"/>
+                        <viewControllerLayoutGuide type="bottom" id="lXz-yr-ca2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H3X-Gp-841">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGJ-2i-9Nz">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="DO"/>
+                                <connections>
+                                    <action selector="doTapped:" destination="nCg-1r-SNw" eventType="touchUpInside" id="mN3-IY-ZQ8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oG2-Pj-Sqw">
+                                <rect key="frame" x="285" y="355" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="nCg-1r-SNw" eventType="touchUpInside" id="QRo-k3-6YD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9g-TK-AYM">
+                                <rect key="frame" x="285" y="215" width="30" height="30"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="testTapped:" destination="nCg-1r-SNw" eventType="touchUpInside" id="dc0-Wr-f71"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RGJ-2i-9Nz" firstAttribute="centerX" secondItem="H3X-Gp-841" secondAttribute="centerX" id="PTn-Sz-WJy"/>
+                            <constraint firstItem="RGJ-2i-9Nz" firstAttribute="top" secondItem="c9g-TK-AYM" secondAttribute="bottom" constant="40" id="WZ8-zl-U5I"/>
+                            <constraint firstItem="RGJ-2i-9Nz" firstAttribute="centerY" secondItem="H3X-Gp-841" secondAttribute="centerY" id="hfG-Rm-KcM"/>
+                            <constraint firstItem="oG2-Pj-Sqw" firstAttribute="centerX" secondItem="H3X-Gp-841" secondAttribute="centerX" id="kUZ-aH-w0H"/>
+                            <constraint firstItem="c9g-TK-AYM" firstAttribute="centerX" secondItem="H3X-Gp-841" secondAttribute="centerX" id="oFP-50-SI4"/>
+                            <constraint firstItem="oG2-Pj-Sqw" firstAttribute="top" secondItem="RGJ-2i-9Nz" secondAttribute="bottom" constant="40" id="v5y-Vx-otK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TnJ-XJ-oAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="-232"/>
+        </scene>
+    </scenes>
+</document>
